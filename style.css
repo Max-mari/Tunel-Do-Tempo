@@ -29,7 +29,7 @@ img {
 /* --- Cabeçalho (Hero Section) --- */
 
 .hero {
-    background-color: #47628a; /* Azul Royal Vibrante */
+    background-color: #729edf; /* Azul Royal Vibrante */
     padding: 70px 20px 30px;
     text-align: center;
     border-bottom: 5px solid #154677; /* Linha Azul Claro de destaque */
@@ -37,7 +37,7 @@ img {
 
 .hero h1 {
     font-size: 3em;
-    color: #91b8df; /* Título em Azul Profundo */
+    color: #b1d8ff; /* Título em Azul Profundo */
     text-shadow: 1px 1px 0 #ffffff; 
     margin-bottom: 10px;
 }
