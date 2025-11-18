@@ -29,10 +29,10 @@ img {
 /* --- Cabeçalho (Hero Section) --- */
 
 .hero {
-    background-color: #1a75ff; /* Azul Royal Vibrante */
+    background-color: #00183d; /* Azul Royal Vibrante */
     padding: 70px 20px 30px;
     text-align: center;
-    border-bottom: 5px solid #80bfff; /* Linha Azul Claro de destaque */
+    border-bottom: 5px solid #154677; /* Linha Azul Claro de destaque */
 }
 
 .hero h1 {
