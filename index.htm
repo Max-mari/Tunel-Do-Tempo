@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Terceirão: O Fim de Uma Era</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header class="hero terceirao-hero">
+        <h1>O Túnel do Tempo do Terceirão</h1>
+        <p>A contagem regressiva final para o fim de uma era. **#JáDeuSaudade**</p>
+        <div id="countdown">Faltam apenas: **<span id="dias-restantes">XXX</span> dias**!</div>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="intro-section">
+            <h2>Nossa Jornada: Do Básico ao Vestibular</h2>
+            <p>Três anos de memes, provas e amizades inesquecíveis. Agora, o próximo capítulo nos espera, mas primeiro, vamos reviver os melhores momentos!</p>
+        </section>
+
+        <section class="timeline-event">
+            <div class="event-text">
+                <h3>O Início (1º e 2º Ano)</h3>
+                <p>Onde tudo começou. A fase de adaptação, as primeiras grandes festas e a construção da nossa turma. Lembra daquela aula...?</p>
+            </div>
+            <figure class="event-image">
+                <img src="img1.jpg" alt="Foto antiga da turma">
+                <figcaption>Lembrança 1: A inocência do começo.</figcaption>
+            </figure>
+        </section>
+
+        <section class="timeline-event event-reverse">
+            <figure class="event-image">
+                <img src="img2.jpg" alt="Foto da formatura ou trote">
+                <figcaption>Lembrança 2: O ápice do Terceirão.</figcaption>
+            </figure>
+            <div class="event-text">
+                <h3>A Glória (O Terceirão)</h3>
+                <p>O ano da pressão, mas também o ano da formatura, dos trotes épicos e do sentimento de que nada mais nos para. Somos formandos!</p>
+            </div>
+        </section>
+
+        <section class="future-plans-section">
+            <h2>O Que Vem Depois? 🚀</h2>
+            <p>Vestibular, intercâmbio, trabalho... O futuro é nosso! Deixe uma mensagem para a turma sobre seus planos.</p>
+            </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Turma **Terceirão Raiz** | Rumo à Liberdade!</p>
+    </footer>
+
+    <script>
+        // Script simples para calcular os dias restantes até uma data de formatura/fim do ano.
+        const dataFimAno = new Date("December 15, 2025 00:00:00").getTime(); 
+        const hoje = new Date().getTime();
+        const diferenca = dataFimAno - hoje;
+        const dias = Math.ceil(diferenca / (1000 * 60 * 60 * 24));
+
+        if (dias > 0) {
+            document.getElementById("dias-restantes").textContent = dias;
+        } else {
+            document.getElementById("countdown").textContent = "🎉 PARABÉNS! VOCÊ SE FORMOU! 🎉";
+        }
+    </script>
+</body>
+</html>
