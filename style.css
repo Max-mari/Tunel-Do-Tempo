@@ -1,57 +1,165 @@
-/* Paleta Artística (Mais Fiel a Van Gogh) */
-/* --azul-profundo: #003366; */
-/* --azul-celeste: #1E90FF; */
-/* --amarelo-dourado: #FFC300; */
-/* --branco-suave: #F0F8FF; */
+/* Paleta Tons de Azul: */
+/* --azul-profundo: #001f3f;   (Navy Escuro, Quase Preto) */
+/* --azul-medio: #1a75ff;      (Azul Royal Vibrante) */
+/* --azul-claro: #80bfff;      (Azul Celeste Claro) */
+/* --branco: #ffffff; */
+/* --cinza-claro: #f0f8ff; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    font-family: 'Georgia', serif; /* Fonte mais clássica */
-    line-height: 1.8;
-    background-color: #003366; /* Azul Profundo de fundo */
-    color: #F0F8FF; /* Branco Suave para o texto principal */
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6;
+    background-color: #001f3f; /* Fundo Azul Profundo */
+    color: #f0f8ff; /* Texto principal em Cinza Claro */
 }
 
-/* --- Hero Section (Mais Introspectivo) --- */
-.terceirao-hero {
-    background-color: #1E90FF; /* Azul Celeste */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Cabeçalho (Hero Section) --- */
+
+.hero {
+    background-color: #1a75ff; /* Azul Royal Vibrante */
     padding: 70px 20px 30px;
     text-align: center;
-    border-bottom: 5px solid #FFC300; /* Linha dourada de destaque */
+    border-bottom: 5px solid #80bfff; /* Linha Azul Claro de destaque */
 }
 
-.terceirao-hero h1 {
-    font-size: 2.8em;
-    color: #003366; /* Título em azul profundo */
-    text-shadow: 1px 1px 0 #F0F8FF;
+.hero h1 {
+    font-size: 3em;
+    color: #001f3f; /* Título em Azul Profundo */
+    text-shadow: 1px 1px 0 #ffffff; 
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    color: #001f3f;
+    font-weight: bold;
 }
 
 #countdown {
-    background-color: #FFC300; /* Fundo do contador em amarelo dourado */
-    color: #003366; 
-    border-radius: 50px; /* Mais arredondado */
-    /* Remove a animação de pulso para um efeito mais calmo */
-    animation: none; 
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #80bfff; /* Fundo do contador em Azul Claro */
+    color: #001f3f; /* Texto do contador em Azul Profundo */
+    font-size: 1.5em;
+    font-weight: 900;
+    display: inline-block;
+    border-radius: 5px;
 }
 
-/* Estilo dos Eventos da Linha do Tempo */
+/* --- Contêiner Principal --- */
+
+.content-wrapper {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px; 
+}
+
+.intro-section {
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    color: #80bfff; /* Texto introdutório em Azul Claro */
+}
+
+.intro-section h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    border-bottom: 3px dashed #1a75ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Estilo dos Eventos da Linha do Tempo (Contêineres) */
 .timeline-event {
-    background-color: rgba(0, 51, 102, 0.8); 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(0, 31, 63, 0.85); /* Azul Profundo semi-transparente para o contêiner */
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 195, 0, 0.3); /* Brilho dourado sutil */
+    /* Borda e Sombra de Destaque */
+    border: 2px solid #1a75ff; 
+    box-shadow: 0 0 15px rgba(128, 191, 255, 0.5); /* Brilho azul claro */
 }
 
 .event-image {
-    border: 3px solid #FFC300; 
+    width: 100%;
+    margin-bottom: 15px;
+    border: 3px solid #80bfff; 
+    border-radius: 8px;
 }
 
 .event-text h3 {
-    color: #FFC300; /* Título do evento em dourado */
-    border-left: 4px solid #1E90FF;
+    color: #1a75ff; /* Título do evento em Azul Royal */
+    border-left: 5px solid #80bfff;
     padding-left: 15px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.event-text p {
+    color: #f0f8ff; 
+}
+
+/* Seção de Planos Futuros */
+.future-plans-section {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 5px double #1a75ff;
+    color: #80bfff;
+}
+
+.future-plans-section h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
 }
 
 /* --- Rodapé --- */
 footer {
-    background-color: #001A33; /* Azul muito escuro */
-    color: rgba(255, 255, 255, 0.8);
+    background-color: #000d1a; /* Azul quase preto */
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* --- Media Query para Desktop (Responsividade e Contêineres Lado a Lado) --- */
+@media (min-width: 768px) {
+    .timeline-event {
+        flex-direction: row;
+        gap: 40px;
+        text-align: left;
+    }
+
+    .event-image,
+    .event-text {
+        width: 50%;
+    }
+
+    /* Inverte a ordem */
+    .event-reverse {
+        flex-direction: row-reverse;
+    }
+
+    /* Ajusta o destaque do texto invertido */
+    .event-reverse .event-text h3 {
+        border-left: none;
+        border-right: 5px solid #80bfff;
+        padding-left: 0;
+        padding-right: 15px;
+    }
 }
