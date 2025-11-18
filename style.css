@@ -1,159 +1,57 @@
-/* Paleta Terceirão (Van Gogh + Vibe Festa): */
-/* --azul-festa: #000080;   (Navy/Azul Profundo Forte) */
-/* --amarelo-brilhante: #FFEB3B; (Amarelo Neon/Destaque) */
-/* --azul-claro-vibrante: #00BFFF; (Azul-céu Vibrante) */
-/* --vermelho-acento: #FF4500; (Toque de energia/perigo) */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* Paleta Artística (Mais Fiel a Van Gogh) */
+/* --azul-profundo: #003366; */
+/* --azul-celeste: #1E90FF; */
+/* --amarelo-dourado: #FFC300; */
+/* --branco-suave: #F0F8FF; */
 
 body {
-    font-family: 'Arial Black', sans-serif; /* Fonte mais forte */
-    line-height: 1.5;
-    background-color: #000080; 
-    color: #FFEB3B; /* Texto principal em amarelo */
+    font-family: 'Georgia', serif; /* Fonte mais clássica */
+    line-height: 1.8;
+    background-color: #003366; /* Azul Profundo de fundo */
+    color: #F0F8FF; /* Branco Suave para o texto principal */
 }
 
-/* --- Hero Terceirão (Destaque) --- */
+/* --- Hero Section (Mais Introspectivo) --- */
 .terceirao-hero {
-    background-color: #00BFFF; /* Fundo azul claro vibrante */
+    background-color: #1E90FF; /* Azul Celeste */
     padding: 70px 20px 30px;
     text-align: center;
-    border-bottom: 8px solid #FF4500; /* Borda vermelha de ACENTO */
+    border-bottom: 5px solid #FFC300; /* Linha dourada de destaque */
 }
 
 .terceirao-hero h1 {
-    font-size: 3em;
-    color: #000080; /* Título em azul forte */
-    text-shadow: 2px 2px 0 #FFEB3B; /* Sombra amarela para destaque */
-    margin-bottom: 10px;
-}
-
-.terceirao-hero p {
-    font-size: 1.3em;
-    color: #000080;
-    font-weight: bold;
+    font-size: 2.8em;
+    color: #003366; /* Título em azul profundo */
+    text-shadow: 1px 1px 0 #F0F8FF;
 }
 
 #countdown {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #FFEB3B; /* Fundo do contador amarelo */
-    color: #FF4500; /* Texto do contador em vermelho */
-    font-size: 1.5em;
-    font-weight: 900;
-    display: inline-block;
-    border-radius: 5px;
-    animation: pulse 1s infinite alternate; /* Efeito Piscante */
-}
-
-@keyframes pulse {
-    from { transform: scale(1); }
-    to { transform: scale(1.05); }
-}
-
-/* --- Conteúdo e Estilos de Lista --- */
-.content-wrapper {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 15px;
-}
-
-.intro-section {
-    text-align: center;
-    padding: 30px 0;
-    margin-bottom: 30px;
-    color: #00BFFF; /* Texto introdutório em azul vibrante */
-}
-
-.intro-section h2 {
-    color: #FFEB3B;
-    margin-bottom: 15px;
-    border-bottom: 3px dashed #FF4500;
-    display: inline-block;
-    padding-bottom: 5px;
+    background-color: #FFC300; /* Fundo do contador em amarelo dourado */
+    color: #003366; 
+    border-radius: 50px; /* Mais arredondado */
+    /* Remove a animação de pulso para um efeito mais calmo */
+    animation: none; 
 }
 
 /* Estilo dos Eventos da Linha do Tempo */
 .timeline-event {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    margin-bottom: 50px;
-    padding: 20px;
-    background-color: rgba(0, 0, 128, 0.85); /* Azul marinho semi-transparente */
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 235, 59, 0.4); /* Brilho amarelo */
+    background-color: rgba(0, 51, 102, 0.8); 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 195, 0, 0.3); /* Brilho dourado sutil */
 }
 
 .event-image {
-    width: 100%;
-    margin-bottom: 15px;
-    border: 5px solid #FFEB3B; 
-    border-radius: 10px;
+    border: 3px solid #FFC300; 
 }
 
 .event-text h3 {
-    color: #FF4500; /* Título do evento em vermelho */
-    border-left: 5px solid #00BFFF;
+    color: #FFC300; /* Título do evento em dourado */
+    border-left: 4px solid #1E90FF;
     padding-left: 15px;
-    margin-bottom: 10px;
-    font-size: 1.8em;
-}
-
-.event-text p {
-    color: #F0F8FF; /* Corpo do texto em branco suave */
-}
-
-/* Seção de Planos Futuros */
-.future-plans-section {
-    text-align: center;
-    padding: 40px 0;
-    border-top: 5px double #FFEB3B;
-    color: #00BFFF;
-}
-
-.future-plans-section h2 {
-    color: #FFEB3B;
-    margin-bottom: 15px;
 }
 
 /* --- Rodapé --- */
 footer {
-    background-color: #FF4500; /* Rodapé em vermelho para fechar com impacto */
-    color: #000080;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-/* --- Media Query para Desktop (Responsividade) --- */
-@media (min-width: 768px) {
-    .timeline-event {
-        flex-direction: row;
-        gap: 40px;
-        text-align: left;
-    }
-
-    .event-image,
-    .event-text {
-        width: 50%;
-    }
-
-    /* Inverte a ordem */
-    .event-reverse {
-        flex-direction: row-reverse;
-    }
-
-    /* Ajusta o destaque do texto invertido para o lado direito */
-    .event-reverse .event-text h3 {
-        border-left: none;
-        border-right: 5px solid #00BFFF;
-        padding-left: 0;
-        padding-right: 15px;
-    }
+    background-color: #001A33; /* Azul muito escuro */
+    color: rgba(255, 255, 255, 0.8);
 }
